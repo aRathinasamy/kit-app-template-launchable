@@ -45,7 +45,7 @@ ENV WORKSPACE_DIR=/home/ubuntu/workspace
 
 WORKDIR /home/ubuntu/workspace
 
-ARG KIT_APP_TEMPLATE_BRANCH=main
+ARG KIT_APP_TEMPLATE_BRANCH='main'
 RUN git clone -b ${KIT_APP_TEMPLATE_BRANCH} https://github.com/NVIDIA-Omniverse/kit-app-template.git
 
 COPY --chown=ubuntu:ubuntu ./README.md ${WORKSPACE_DIR}/README.md
